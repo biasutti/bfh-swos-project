@@ -1,9 +1,11 @@
 package ch.bfh.obelix.heroes.service;
 
 import ch.bfh.obelix.heroes.model.Hero;
+import org.springframework.stereotype.Service;
 
 import java.util.Random;
 
+@Service
 public class HeroServiceImpl implements HeroService {
 
     public Hero createHero(String name) {
