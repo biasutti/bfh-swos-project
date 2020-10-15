@@ -11,6 +11,9 @@ target/
 # BlueJ files
 *.ctxt
 
+# IDE Files
+*.iml
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
