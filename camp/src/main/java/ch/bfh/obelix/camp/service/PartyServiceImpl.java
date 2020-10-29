@@ -1,7 +1,7 @@
-package ch.bfh.obelix.heroes.service;
+package ch.bfh.obelix.camp.service;
 
-import ch.bfh.obelix.heroes.model.Hero;
-import ch.bfh.obelix.heroes.model.Party;
+import ch.bfh.obelix.camp.model.Hero;
+import ch.bfh.obelix.camp.model.Party;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

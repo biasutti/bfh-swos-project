@@ -1,4 +1,4 @@
-package ch.bfh.obelix.heroes.model;
+package ch.bfh.obelix.camp.model;
 
 public class Hero {
 

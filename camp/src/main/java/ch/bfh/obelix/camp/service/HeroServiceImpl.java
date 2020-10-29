@@ -1,6 +1,6 @@
-package ch.bfh.obelix.heroes.service;
+package ch.bfh.obelix.camp.service;
 
-import ch.bfh.obelix.heroes.model.Hero;
+import ch.bfh.obelix.camp.model.Hero;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;

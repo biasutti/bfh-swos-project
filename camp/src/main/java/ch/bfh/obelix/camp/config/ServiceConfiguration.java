@@ -1,9 +1,9 @@
-package ch.bfh.obelix.heroes.config;
+package ch.bfh.obelix.camp.config;
 
-import ch.bfh.obelix.heroes.service.HeroService;
-import ch.bfh.obelix.heroes.service.HeroServiceImpl;
-import ch.bfh.obelix.heroes.service.PartyService;
-import ch.bfh.obelix.heroes.service.PartyServiceImpl;
+import ch.bfh.obelix.camp.service.HeroService;
+import ch.bfh.obelix.camp.service.HeroServiceImpl;
+import ch.bfh.obelix.camp.service.PartyService;
+import ch.bfh.obelix.camp.service.PartyServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
