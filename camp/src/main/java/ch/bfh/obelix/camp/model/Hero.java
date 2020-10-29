@@ -1,6 +1,19 @@
 package ch.bfh.obelix.camp.model;
 
+
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Hero {
+
+    @Id
+    @GeneratedValue(generator = "system-uuid")
+    @GenericGenerator(name = "system-uuid", strategy = "uuid")
+    private String id;
 
     private String name;
     private int atk;
@@ -38,4 +51,5 @@ public class Hero {
     public void setHp(double hp) {
         this.hp = hp;
     }
+
 }

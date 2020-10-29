@@ -1,7 +1,10 @@
 package ch.bfh.obelix.camp.service;
 
+import ch.bfh.obelix.HeroesApplication;
 import ch.bfh.obelix.camp.model.Hero;
 import ch.bfh.obelix.camp.model.Party;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,22 +14,23 @@ import java.util.List;
 @Service
 public class PartyServiceImpl implements PartyService {
 
+    private static final Logger log = LoggerFactory.getLogger(HeroesApplication.class);
 
     @Autowired
     private HeroService heroService;
 
     @Override
     public Party createParty(String name) {
-        Party myParty  =  new Party();
+        Party myParty = new Party();
         myParty.setName(name);
-        System.out.println("Name of Party was set to "+name);
+        log.debug("Name of Party was set to " + name);
         List<Hero> members = new ArrayList<>();
 
-        for (int i=0;i<4;i++){
-            String memberName = "Hero"+i;
+        for (int i = 0; i < 4; i++) {
+            String memberName = "Hero" + i;
             Hero newMember = heroService.createHero(memberName);
             members.add(newMember);
-            System.out.println("Hero with name "+memberName+" was added to Party "+name);
+            log.debug("Hero with name " + memberName + " was added to Party " + name);
         }
         myParty.setMembers(members);
         return myParty;
