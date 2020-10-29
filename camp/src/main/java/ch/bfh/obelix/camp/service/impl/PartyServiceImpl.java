@@ -1,8 +1,10 @@
-package ch.bfh.obelix.camp.service;
+package ch.bfh.obelix.camp.service.impl;
 
 import ch.bfh.obelix.HeroesApplication;
 import ch.bfh.obelix.camp.model.Hero;
 import ch.bfh.obelix.camp.model.Party;
+import ch.bfh.obelix.camp.service.HeroService;
+import ch.bfh.obelix.camp.service.PartyService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
