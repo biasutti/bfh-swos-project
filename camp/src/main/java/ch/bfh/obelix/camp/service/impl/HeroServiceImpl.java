@@ -9,7 +9,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Random;
 
 @Service
@@ -29,22 +28,8 @@ public class HeroServiceImpl implements HeroService {
         newHero.setDef(new Random().nextInt(100));
         log.debug("Set " + newHero.getName() + " DEF to " + newHero.getDef());
         newHero.setHp(100.00);
-        saveHero(newHero);
-        return newHero;
-    }
-
-
-
-    public void saveHero(Hero hero) {
-        repository.save(hero);
-    }
-
-    public List<Hero> getAllHeroes() {
-        return (List<Hero>) repository.findAll();
-    }
-
-    public List<Hero> getHeroesAtkGreaterThan50() {
-        return repository.findAllByAtkGreaterThan(50);
+        String uuid = repository.save(newHero).getId();
+        return repository.findById(uuid).get();
     }
 
 

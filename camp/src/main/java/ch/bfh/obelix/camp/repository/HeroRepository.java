@@ -10,9 +10,13 @@ import java.util.List;
 public interface HeroRepository extends CrudRepository<Hero, String> {
 
     List<Hero> findByNameIgnoreCase(String name);
+
     List<Hero> findAllByAtkGreaterThan(int atk);
-    List<Hero> findAllOrOrderByAtk();
-    List<Hero> findAllOrOrderByDef();
+
+    //List<Hero> findAllOrOrderByAtk();
+
+    //List<Hero> findAllOrOrderByDef();
+
     List<Hero> findByHpEquals(double hp);
 
 }

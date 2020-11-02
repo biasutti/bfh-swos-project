@@ -20,6 +20,10 @@ public class Hero {
     private int def;
     private double hp;
 
+    public String getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
@@ -51,5 +55,6 @@ public class Hero {
     public void setHp(double hp) {
         this.hp = hp;
     }
+
 
 }

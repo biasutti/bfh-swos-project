@@ -1,10 +1,8 @@
 package ch.bfh.obelix.camp.config;
 
-import ch.bfh.obelix.camp.model.Hero;
-import ch.bfh.obelix.camp.repository.HeroRepository;
 import ch.bfh.obelix.camp.service.HeroService;
-import ch.bfh.obelix.camp.service.impl.HeroServiceImpl;
 import ch.bfh.obelix.camp.service.PartyService;
+import ch.bfh.obelix.camp.service.impl.HeroServiceImpl;
 import ch.bfh.obelix.camp.service.impl.PartyServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,10 +17,8 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
-import java.util.Optional;
 
 @Configuration
-
 @EnableJpaRepositories(basePackages = "ch.bfh.obelix.camp.repository")
 public class ServiceConfiguration {
 
@@ -35,7 +31,6 @@ public class ServiceConfiguration {
     public PartyService partyService() {
         return new PartyServiceImpl();
     }
-
 
     @Bean
     public DataSource dataSource() {
