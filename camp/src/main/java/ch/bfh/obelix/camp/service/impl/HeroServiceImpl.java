@@ -1,6 +1,6 @@
 package ch.bfh.obelix.camp.service.impl;
 
-import ch.bfh.obelix.HeroesApplication;
+import ch.bfh.obelix.CampApplication;
 import ch.bfh.obelix.camp.model.Hero;
 import ch.bfh.obelix.camp.repository.HeroRepository;
 import ch.bfh.obelix.camp.service.HeroService;
@@ -17,7 +17,7 @@ public class HeroServiceImpl implements HeroService {
     @Autowired
     private HeroRepository repository;
 
-    private static final Logger log = LoggerFactory.getLogger(HeroesApplication.class);
+    private static final Logger log = LoggerFactory.getLogger(CampApplication.class);
 
     public Hero createHero(String name) {
         Hero newHero = new Hero();
