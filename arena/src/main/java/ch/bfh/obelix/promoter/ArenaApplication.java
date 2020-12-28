@@ -1,7 +1,7 @@
-package ch.bfh.obelix.arena;
+package ch.bfh.obelix.promoter;
 
-import ch.bfh.obelix.arena.service.BattleService;
-import ch.bfh.obelix.arena.service.impl.BattleServiceImpl;
+import ch.bfh.obelix.promoter.service.BattleService;
+import ch.bfh.obelix.promoter.service.impl.BattleServiceImpl;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;

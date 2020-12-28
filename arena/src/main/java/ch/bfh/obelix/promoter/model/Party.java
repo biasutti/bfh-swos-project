@@ -1,4 +1,4 @@
-package ch.bfh.obelix.arena.model;
+package ch.bfh.obelix.promoter.model;
 
 import lombok.Data;
 import org.springframework.hateoas.RepresentationModel;

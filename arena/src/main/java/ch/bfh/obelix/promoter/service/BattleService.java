@@ -1,6 +1,6 @@
-package ch.bfh.obelix.arena.service;
+package ch.bfh.obelix.promoter.service;
 
-import ch.bfh.obelix.arena.model.Party;
+import ch.bfh.obelix.promoter.model.Party;
 
 public interface BattleService {
 

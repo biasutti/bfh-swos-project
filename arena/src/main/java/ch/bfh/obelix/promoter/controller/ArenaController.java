@@ -1,7 +1,7 @@
-package ch.bfh.obelix.arena.controller;
+package ch.bfh.obelix.promoter.controller;
 
-import ch.bfh.obelix.arena.service.BattleService;
-import ch.bfh.obelix.arena.model.Party;
+import ch.bfh.obelix.promoter.service.BattleService;
+import ch.bfh.obelix.promoter.model.Party;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

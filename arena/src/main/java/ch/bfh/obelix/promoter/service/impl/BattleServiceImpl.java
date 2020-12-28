@@ -1,8 +1,8 @@
-package ch.bfh.obelix.arena.service.impl;
+package ch.bfh.obelix.promoter.service.impl;
 
-import ch.bfh.obelix.arena.service.BattleService;
-import ch.bfh.obelix.arena.model.Hero;
-import ch.bfh.obelix.arena.model.Party;
+import ch.bfh.obelix.promoter.service.BattleService;
+import ch.bfh.obelix.promoter.model.Hero;
+import ch.bfh.obelix.promoter.model.Party;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
