@@ -11,7 +11,6 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 
 @RestController
-@RequestMapping("/party")
 public class PartyController {
 
   @Autowired
@@ -20,8 +19,8 @@ public class PartyController {
   @Autowired
   private RepositoryEntityLinks entityLinks;
 
-  @GetMapping("/{name}")
-  public @ResponseBody Party createParty(@PathVariable String name) {
+  @GetMapping(value = "/createParty")
+  public Party createParty(@RequestParam String name) {
     Party party = partyService.createParty(name);
 
     // HAL Browser

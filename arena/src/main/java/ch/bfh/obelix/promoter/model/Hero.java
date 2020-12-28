@@ -2,15 +2,9 @@ package ch.bfh.obelix.promoter.model;
 
 
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
-import org.springframework.hateoas.RepresentationModel;
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
 
 @Data
-public class Hero extends RepresentationModel {
+public class Hero {
 
   private String id;
 
