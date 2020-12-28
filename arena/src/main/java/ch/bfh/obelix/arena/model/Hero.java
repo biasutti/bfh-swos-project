@@ -1,4 +1,4 @@
-package ch.bfh.obelix.camp.model;
+package ch.bfh.obelix.arena.model;
 
 
 import lombok.Data;
