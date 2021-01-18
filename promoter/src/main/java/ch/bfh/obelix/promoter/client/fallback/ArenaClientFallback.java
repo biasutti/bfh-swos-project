@@ -1,5 +1,6 @@
-package ch.bfh.obelix.promoter.client;
+package ch.bfh.obelix.promoter.client.fallback;
 
+import ch.bfh.obelix.promoter.client.ArenaClient;
 import ch.bfh.obelix.promoter.model.Party;
 import org.springframework.stereotype.Component;
 

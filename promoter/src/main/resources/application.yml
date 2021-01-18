@@ -1,0 +1,26 @@
+# eureka server url
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: '*'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+
+server:
+  port: 4444
+
+spring:
+  application:
+    name: promoter-service
