@@ -19,7 +19,8 @@
 		<module>arena</module>
 		<module>promoter</module>
 		<module>registry</module>
-	</modules>
+        <module>frontend</module>
+    </modules>
 
 	<packaging>pom</packaging>
 

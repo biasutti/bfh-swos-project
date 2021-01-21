@@ -1,0 +1,27 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: zuul-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+
+zuul:
+  ignored-services: '*'
+  ignoredHeaders: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+  sensitive-headers: Cookie,Set-Cookie
+  routes:
+    # Map paths to services
+    user-service:
+      path: /arena/**
+      serviceId: arena-service
+    content-service:
+      path: /camp/**
+      serviceId: camp-service
+    template-service:
+      path: /promoter/**
+      serviceId: promoter-service
